@@ -1,0 +1,166 @@
+.logo_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 80%;
+}
+
+.logo__section p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.iconSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  color: #de8b05;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.link_item {
+  margin: 8px -12px;
+}
+
+.link_item a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.group_link h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #de8b05;
+}
+
+.group_link li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.subscribeArea h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #de8b05;
+}
+
+.subscribeArea p {
+  width: 201.67px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 0 !important;
+}
+.subscribeArea input::placeholder {
+  color: rgba(222, 139, 5, 0.5);
+}
+.inputArea {
+  width: 202px;
+  height: 40px;
+  border: 1px solid #de8b05;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 20px 0px;
+  padding: 0 7px;
+  background: transparent;
+  color: rgba(222, 139, 5, 0.5);
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background: #195f34;
+  border: 2px solid #2c9a42;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  width: 100px;
+  height: 45px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.btn:hover {
+  color: #195f34;
+  background: #ffffff;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  .subscribeArea {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: unset;
+    text-align: center;
+  }
+  .btn_area {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo__section {
+    width: auto;
+    padding: 1rem;
+  }
+  .subscribeArea {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details_group {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribeArea h3,
+  .subscribeArea p {
+    text-align: center;
+  }
+}

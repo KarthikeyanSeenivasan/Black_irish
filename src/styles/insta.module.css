@@ -1,0 +1,30 @@
+.img {
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+}
+.feedTwo {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1202px) {
+  .feedTwo :nth-child(n + 9) {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 891px) {
+  .feedTwo :nth-child(n + 7) {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedTwo :nth-child(n + 5) {
+    display: none !important;
+  }
+  .img {
+    width: 145px;
+    height: 145px;
+  }
+}

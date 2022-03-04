@@ -1,0 +1,245 @@
+.margin_top {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  cursor: pointer;
+  position: relative;
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.center_img img {
+  width: 200px;
+  height: 400px;
+  transform: rotate(0deg);
+}
+
+.companyLogoMain img {
+  width: 200px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .body {
+    width: 800px;
+  }
+
+  .center_img img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .companyLogoMain img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .body {
+    width: 600px;
+    min-height: 550px;
+  }
+
+  .center_img img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .companyLogoMain img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .body {
+    width: 500px;
+    min-height: 380px;
+    margin: 0 auto;
+  }
+
+  .center_img img {
+    width: 80px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .companyLogoMain img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .body {
+    width: 100%;
+    min-height: 344px;
+  }
+
+  .center_img img {
+    width: 75px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .companyLogoMain img {
+    width: 65px;
+  }
+}
+
+
+/* .circle:nth-child(2) {
+  transform: rotate(270deg) translateX(22em) rotate(-270deg);
+}
+
+.circle:nth-child(3) {
+  transform: rotate(306deg) translateX(28em) translateY(6em) rotate(-306deg);
+}
+.circle:nth-child(4) {
+  transform: rotate(355deg) translateX(27.5em) translateY(-4em) rotate(-355deg);
+}
+
+.circle:nth-child(5) {
+  transform: rotate(18deg) translateX(27.5em) translateY(-2em) rotate(-18deg);
+}
+
+.circle:nth-child(6) {
+  transform: rotate(54deg) translateX(26.5em) translateY(-8.5em) rotate(-54deg);
+}
+
+.circle:nth-child(7) {
+  transform: rotate(90deg) translateX(22em) rotate(-90deg);
+}
+
+.circle:nth-child(8) {
+  transform: rotate(126deg) translateX(26em) translateY(8em) rotate(-126deg);
+}
+.circle:nth-child(9) {
+  transform: rotate(162deg) translateX(30em) translateY(1.5em) rotate(-162deg);
+}
+
+.circle:nth-child(10) {
+  transform: rotate(198deg) translateX(29em) translateY(-4em) rotate(-198deg);
+} */
+
+
+/* 
+.circle_position {
+  position: absolute;
+}
+
+.list_item {
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.circle_container {
+  position: absolute;
+  left: 13%;
+  top: 37%;
+  border: dashed;
+  width: 60%;
+  height: 75%;
+  border-radius: 75%;
+  background-color: rgb(148, 141, 141);
+}
+.circle_container a {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 4em;
+}
+.circle_container img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .center_img {
+    top: 65%;
+    left: 37%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .circle_container {
+    position: absolute;
+    left: 10%;
+    top: 37%;
+    border: dashed;
+
+    border-radius: 50%;
+    background-color: rgb(148, 141, 141);
+  }
+}
+@media screen and (max-width: 992px) {
+  .circle_container {
+    position: absolute;
+    left: 10%;
+    top: 37%;
+    border: dashed;
+
+    border-radius: 50%;
+    background-color: rgb(148, 141, 141);
+  }
+  .circle_container img {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .circle_container {
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    border: dashed;
+
+    border-radius: 50%;
+    background-color: rgb(148, 141, 141);
+  }
+  .circle_container img {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .circle_container {
+    position: absolute;
+    left: 15%;
+    top: 37%;
+    border: dashed;
+
+    border-radius: 50%;
+    background-color: rgb(148, 141, 141);
+  }
+  .circle_container img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .circle_container {
+    position: absolute;
+    left: 10%;
+    top: 37%;
+    border: dashed;
+
+    border-radius: 50%;
+    background-color: rgb(148, 141, 141);
+  }
+  .circle_container img {
+    display: block;
+    width: 100%;
+  }
+} */

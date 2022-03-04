@@ -1,0 +1,56 @@
+.green {
+  background: transparent;
+  text-decoration: none;
+  width: 161px;
+  height: 45px;
+  border: 1px solid #2c9a42;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  color: #2c9a42;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.orange {
+  color: #de8b05;
+  text-decoration: none;
+  border: 1px solid #de8b05;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 31px;
+  width: 161px;
+  height: 45px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.green:hover {
+  color: white;
+  background: #2c9a42;
+  transition-duration: 0.5s;
+}
+
+.orange:hover {
+  color: black;
+  background: #de8b05;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 350px) {
+  .orange {
+    width: 141px;
+  }
+  .green {
+    width: 141px;
+  }
+}

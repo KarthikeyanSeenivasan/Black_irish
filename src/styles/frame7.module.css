@@ -1,0 +1,59 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #1e2722;
+}
+.content h6 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #de8b05;
+}
+.content div p {
+  width: 170px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #1e2722;
+}
+.imgSection a {
+  text-decoration: none !important;
+}
+.imgSection {
+  display: flex;
+  flex-direction: row;
+}
+.imgSection img {
+  filter: drop-shadow(-6px 6px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 25px;
+}
+.imgSection p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1e2722;
+}
+
+@media screen and (max-width: 1041px) {
+  .imgSection {
+    flex-direction: column !important;
+  }
+}
