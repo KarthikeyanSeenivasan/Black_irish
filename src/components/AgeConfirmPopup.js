@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { getImage, GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { getImage, StaticImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 import useWindowSize from "../../hooks/useWindowSize"

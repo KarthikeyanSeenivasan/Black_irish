@@ -5,7 +5,6 @@ import useWindowSize from "../../hooks/useWindowSize"
 import { Link } from "gatsby"
 
 function Frame7({ data }) {
-  const { width } = useWindowSize()
   return (
     <>
       <div className={frame.content}>

@@ -14,7 +14,7 @@ function About({ data }) {
                 key={i}
                 className={`${aboutStyle.section}`}
                 style={
-                  i % 2 == 0
+                  i % 2 === 0
                     ? { flexDirection: "row-reverse" }
                     : { flexDirection: "row" }
                 }

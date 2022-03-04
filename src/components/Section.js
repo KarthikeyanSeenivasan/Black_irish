@@ -14,7 +14,7 @@ const Section = ({ data }) => {
               key={i}
               className={`mb-5 ${home.section}`}
               style={
-                i % 2 == 0
+                i % 2 === 0
                   ? { flexDirection: "row-reverse" }
                   : { flexDirection: "row" }
               }

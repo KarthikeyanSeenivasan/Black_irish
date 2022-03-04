@@ -2,7 +2,6 @@ import React from "react"
 import useWindowSize from "../../hooks/useWindowSize"
 import * as insta from "../styles/insta.module.css"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import _get from "lodash/get"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 function InstaFeed() {

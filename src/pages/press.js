@@ -1,11 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/seo"
 import * as globalStyle from "../styles/global.module.css"
 import bottleImg from "../images/center_bottle.png"
 import * as pressStyle from "../styles/press.module.css"
 import useWindowSize from "../../hooks/useWindowSize"
-import { titleImgsDataOne, titleImgsDataTwo } from "../Data/data"
 import { Link } from "gatsby"
 import Consumer from "../../context/Consumer"
 

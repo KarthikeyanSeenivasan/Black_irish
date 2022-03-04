@@ -1,7 +1,5 @@
 import React, { useState } from "react"
 import Cookies from "js-cookie"
-import AgeConfirmPopup from "../src/components/AgeConfirmPopup"
-import IndexPage from "../src/pages"
 
 export const popupContext = React.createContext({})
 

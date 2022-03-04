@@ -18,6 +18,7 @@ import { useTimeout } from "usehooks-ts"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import Consumer from "../../context/Consumer"
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 function Contact() {
   const { width } = useWindowSize()
@@ -43,10 +44,8 @@ function Contact() {
 
   const handleSubmit = async e => {
     e.preventDefault()
-    // const result = await addToMailchimp(email)
-    const result = {
-      result: "success",
-    }
+    const result = await addToMailchimp(email)
+
     if (result.result === "success") {
       toast("We will Contact you soon", {
         position: "top-right",
@@ -57,24 +56,24 @@ function Contact() {
         draggable: true,
         progress: undefined,
       })
-      // try {
-      //   const response = await fetch(
-      //     `https://v1.nocodeapi.com/karthiladder/google_sheets/CLSwPSeipZhmOXsM?tabId=Sheet1`,
-      //     {
-      //       method: `POST`,
-      //       headers: {
-      //         "Content-Type": "application/json",
-      //       },
-      //       body: JSON.stringify([
-      //         [firstName, email, message, new Date().toLocaleString()],
-      //       ]),
-      //     }
-      //   )
-      //   await response.json()
-      //   e.target.reset()
-      // } catch (err) {
-      //   console.log(err)
-      // }
+      try {
+        const response = await fetch(
+          `https://v1.nocodeapi.com/karthiladder/google_sheets/CLSwPSeipZhmOXsM?tabId=Sheet1`,
+          {
+            method: `POST`,
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify([
+              [firstName, email, message, new Date().toLocaleString()],
+            ]),
+          }
+        )
+        await response.json()
+        e.target.reset()
+      } catch (err) {
+        console.log(err)
+      }
     } else {
       toast(`${result.msg}`, {
         position: "top-right",

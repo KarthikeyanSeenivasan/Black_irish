@@ -3,81 +3,13 @@ import Seo from "../components/seo"
 import * as productStyle from "../styles/product.module.css"
 import * as globalStyle from "../styles/global.module.css"
 import Layout from "../components/Layout/Layout"
-import product1 from "../images/products/product1.png"
-import product2 from "../images/products/product2.png"
-import product3 from "../images/products/product3.png"
 import useWindowSize from "../../hooks/useWindowSize"
 import InstaFeed from "../components/InstaFeed"
-import flip_img from "../images/flip.png"
-import icon_img from "../images/bulletin.png"
 import Aos from "aos"
-import SimpleSlider from "../components/SimpleSlider"
-import ProductTabs from "../components/ProductTabs"
-import Slider from "react-slick"
 import "../styles/slick.css"
-import styled from "styled-components"
 import { useLocation } from "@reach/router"
 import { productData } from "../Data/data"
 import Consumer from "../../context/Consumer"
-
-const ScrollCard = styled.div`
-  width: 90%;
-  border-top: 1px solid rgba(30, 39, 34, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  div {
-    padding: 0 10px;
-  }
-
-  div p {
-    font-size: 13px;
-    line-height: 16px;
-  }
-`
-const tasteDetails = [
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-  {
-    icon: icon_img,
-    title: "TASTING NOTES",
-    desc: "Notes of bright citrus with a smooth, fresh finish.",
-  },
-]
 
 function Products() {
   const settings = {
