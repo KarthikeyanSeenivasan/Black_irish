@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: KarthikeyanSeenivasan/Black_irish
-  branch: master
+  branch: main
 media_folder: "images/"
 
 collections:
