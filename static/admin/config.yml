@@ -9,9 +9,8 @@ collections:
     label: "Home"
     folder: "content/home"
     create: true
-    slug: "home.json"
+    file: "content/home/home.json"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -19,9 +18,8 @@ collections:
     label: "About"
     folder: "content/about"
     create: true
-    slug: "about.json"
+    file: "content/about/about.json"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
