@@ -9,6 +9,7 @@ collections:
     label: "Home"
     folder: "content/home"
     create: true
+    file: static/site/Home.json
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
