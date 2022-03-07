@@ -7,9 +7,8 @@ media_folder: "images/"
 collections:
   - name: "home"
     label: "Home"
-    folder: "content/home"
+    folder: "content/home.json"
     create: true
-    file: static/site/Home.json
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
@@ -18,7 +17,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "about"
     label: "About"
-    folder: "content/about"
+    folder: "content/about.json"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
