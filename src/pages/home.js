@@ -27,42 +27,40 @@ const Home = () => {
   }, [])
   return (
     <>
-      <Consumer>
-        <Seo title="Home" description="Black Irish" />
-        <Layout>
-          <Banner />
-          <div className="my-5">
-            <div className="container d-flex justify-content-center">
-              <Section data={sectionData} />
-            </div>
+      <Seo title="Home" description="Black Irish" />
+      <Layout>
+        <Banner />
+        <div className="my-5">
+          <div className="container d-flex justify-content-center">
+            <Section data={sectionData} />
           </div>
-          <div className="my-5">
-            <ProductSection data={productData} />
-          </div>
-          <div className="my-5">
-            <Poster />
-          </div>
-          <div className="my-5">
-            <div className={"container"}>
-              <div className="row ">
-                <div className="col-lg-12 col-md-6 col-sm-6 col-6 ">
-                  <Frame6 data={titleImgsDataOne} />
-                </div>
-                <div className="col-lg-12 col-md-6 col-sm-6 col-6 ">
-                  <Frame6 data={titleImgsDataTwo} />
-                </div>
+        </div>
+        <div className="my-5">
+          <ProductSection data={productData} />
+        </div>
+        <div className="my-5">
+          <Poster />
+        </div>
+        <div className="my-5">
+          <div className={"container"}>
+            <div className="row ">
+              <div className="col-lg-12 col-md-6 col-sm-6 col-6 ">
+                <Frame6 data={titleImgsDataOne} />
+              </div>
+              <div className="col-lg-12 col-md-6 col-sm-6 col-6 ">
+                <Frame6 data={titleImgsDataTwo} />
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="my-5">
-            <Frame7 data={recipesData} />
-          </div>
-          <div className="my-5">
-            <InstaFeed />
-          </div>
-        </Layout>
-      </Consumer>
+        <div className="my-5">
+          <Frame7 data={recipesData} />
+        </div>
+        <div className="my-5">
+          <InstaFeed />
+        </div>
+      </Layout>
     </>
   )
 }

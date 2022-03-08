@@ -44,86 +44,84 @@ function Products() {
 
   return (
     <>
-      <Consumer>
-        <Seo title="Products" description="Black Irish" />
-        <Layout>
-          <div className={globalStyle.page}>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="750"
-              className={globalStyle.pageTitle}
-            >
-              <h1>Products</h1>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="750"
-              className={globalStyle.border}
-            ></div>
+      <Seo title="Products" description="Black Irish" />
+      <Layout>
+        <div className={globalStyle.page}>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="750"
+            className={globalStyle.pageTitle}
+          >
+            <h1>Products</h1>
           </div>
-          <div className="container">
-            <div className="row d-flex align-items-center">
-              <div className="col-lg-5 col-md-12 col-sm-12 col-12">
-                {productData.map((item, i) =>
-                  selected === item.id ? (
-                    <>
-                      <div className={productStyle.img_section}>
-                        <div key={i} className={productStyle.bottle_img}>
-                          <img
-                            data-aos="zoom-in-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="750"
-                            height={width < 504 ? 350 : width < 700 ? 350 : 500}
-                            width={width < 504 ? 210 : width < 700 ? 120 : 300}
-                            src={item.img}
-                            alt="bottleImg"
-                          />
-                        </div>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="750"
+            className={globalStyle.border}
+          ></div>
+        </div>
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col-lg-5 col-md-12 col-sm-12 col-12">
+              {productData.map((item, i) =>
+                selected === item.id ? (
+                  <>
+                    <div className={productStyle.img_section}>
+                      <div key={i} className={productStyle.bottle_img}>
+                        <img
+                          data-aos="zoom-in-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="750"
+                          height={width < 504 ? 350 : width < 700 ? 350 : 500}
+                          width={width < 504 ? 210 : width < 700 ? 120 : 300}
+                          src={item.img}
+                          alt="bottleImg"
+                        />
                       </div>
-                    </>
-                  ) : null
+                    </div>
+                  </>
+                ) : null
+              )}
+            </div>
+            <div className="col-lg-7 col-md-12 col-sm-12 col-12">
+              <div
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="750"
+                className={productStyle.content}
+              >
+                <h1>THE DETAILS</h1>
+                <ul className={productStyle.menu_list}>
+                  {productData.map((item, i) => (
+                    <li
+                      key={i}
+                      onClick={() => {
+                        setSelected(item.id)
+                      }}
+                      className={
+                        selected === item.id
+                          ? productStyle.selected
+                          : productStyle.menu_item
+                      }
+                    >
+                      {item.title}
+                    </li>
+                  ))}
+                </ul>
+
+                {productData.map((item, i) =>
+                  selected === item.id ? <p key={i}>{item.desc}</p> : null
                 )}
               </div>
-              <div className="col-lg-7 col-md-12 col-sm-12 col-12">
-                <div
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="750"
-                  className={productStyle.content}
-                >
-                  <h1>THE DETAILS</h1>
-                  <ul className={productStyle.menu_list}>
-                    {productData.map((item, i) => (
-                      <li
-                        key={i}
-                        onClick={() => {
-                          setSelected(item.id)
-                        }}
-                        className={
-                          selected === item.id
-                            ? productStyle.selected
-                            : productStyle.menu_item
-                        }
-                      >
-                        {item.title}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {productData.map((item, i) =>
-                    selected === item.id ? <p key={i}>{item.desc}</p> : null
-                  )}
-                </div>
-              </div>
             </div>
           </div>
-          <div className="my-5">
-            <InstaFeed />
-          </div>
-        </Layout>
-      </Consumer>
+        </div>
+        <div className="my-5">
+          <InstaFeed />
+        </div>
+      </Layout>
     </>
   )
 }

@@ -85,7 +85,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </div>
         <>
+        <div className="navbar">
           <div className="mobile_nav">
             <FontAwesomeIcon
               className="mx-3"
@@ -149,8 +151,8 @@ const Header = () => {
               </ul>
             </div>
           </div>
+          </div>
         </>
-      </div>
     </>
   )
 }

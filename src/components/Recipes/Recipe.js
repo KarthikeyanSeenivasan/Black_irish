@@ -26,13 +26,13 @@ const Recipe = ({ data }) => {
               <h6>{item.subtitleOne}: </h6>
               <ul>
                 {item?.pointsOne.map((li, i) => (
-                  <li>{li}</li>
+                  <li>{li?.point}</li>
                 ))}
               </ul>
               <h6>{item.subtitleTwo}: </h6>
               <ul>
                 {item?.pointsTwo.map((li, i) => (
-                  <li key={i}>{li}</li>
+                  <li key={i}>{li?.point}</li>
                 ))}
               </ul>
             </div>

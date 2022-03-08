@@ -81,42 +81,40 @@ function Press() {
   const { width } = useWindowSize()
   return (
     <>
-      <Consumer>
-        <Seo title="Press" description="Black Irish" />
-        <Layout>
-          <div className={globalStyle.page}>
-            <div className={globalStyle.pageTitle}>
-              <h1>Press</h1>
-            </div>
-            <div className={globalStyle.border}></div>
+      <Seo title="Press" description="Black Irish" />
+      <Layout>
+        <div className={globalStyle.page}>
+          <div className={globalStyle.pageTitle}>
+            <h1>Press</h1>
           </div>
-          <div
-            onMouseMove={() => Eyeball()}
-            id="center_bottle"
-            className={pressStyle.body}
-          >
-            <div className={pressStyle.center_img}>
-              <img
-                className="bottle"
-                height={width < 504 ? 300 : width < 700 ? 350 : 466}
-                width={width < 504 ? 192 : width < 700 ? 224 : 300}
-                src={bottleImg}
-                alt="bottleImg"
-              />
-            </div>
+          <div className={globalStyle.border}></div>
+        </div>
+        <div
+          onMouseMove={() => Eyeball()}
+          id="center_bottle"
+          className={pressStyle.body}
+        >
+          <div className={pressStyle.center_img}>
+            <img
+              className="bottle"
+              height={width < 504 ? 300 : width < 700 ? 350 : 466}
+              width={width < 504 ? 192 : width < 700 ? 224 : 300}
+              src={bottleImg}
+              alt="bottleImg"
+            />
+          </div>
 
-            <div className={pressStyle.companyLogoMain}>
-              {titleImgData.map((item, i) => (
-                <div key={i} className="circle">
-                  <Link target="_blank" to={item.link}>
-                    <img src={item.img} alt={item.name} />
-                  </Link>
-                </div>
-              ))}
-            </div>
+          <div className={pressStyle.companyLogoMain}>
+            {titleImgData.map((item, i) => (
+              <div key={i} className="circle">
+                <Link target="_blank" to={item.link}>
+                  <img src={item.img} alt={item.name} />
+                </Link>
+              </div>
+            ))}
           </div>
-        </Layout>
-      </Consumer>
+        </div>
+      </Layout>
     </>
   )
 }

@@ -18,23 +18,21 @@ function Recipes() {
 
   return (
     <>
-      <Consumer>
-        <Seo title="Recipes" description="Black Irish" />
-        <Layout>
-          <div className={recipeStyle.recipe}>
-            <div className={recipeStyle.title}>
-              <h1>COCKTAIL RECIPES</h1>
-            </div>
-            <div className={recipeStyle.border}></div>
+      <Seo title="Recipes" description="Black Irish" />
+      <Layout>
+        <div className={recipeStyle.recipe}>
+          <div className={recipeStyle.title}>
+            <h1>COCKTAIL RECIPES</h1>
           </div>
-          <div className="container my-5">
-            <Recipe data={recipesData} />
-          </div>
-          <div className="my-5">
-            <InstaFeed />
-          </div>
-        </Layout>
-      </Consumer>
+          <div className={recipeStyle.border}></div>
+        </div>
+        <div className="container my-5">
+          <Recipe data={recipesData} />
+        </div>
+        <div className="my-5">
+          <InstaFeed />
+        </div>
+      </Layout>
     </>
   )
 }

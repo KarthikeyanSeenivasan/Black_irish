@@ -6,7 +6,7 @@ import useWindowSize from "../../hooks/useWindowSize"
 import SmallBg from "../images/black_irish.svg"
 import Signature from "./Signature"
 
-const Banner = () => {
+const Banner = ({ videoLink, imgLink }) => {
   const { width } = useWindowSize()
   const [startAnim, setStartAnim] = useState(false)
   const loadAnim = () =>
@@ -25,7 +25,7 @@ const Banner = () => {
           <div
             className="container-fluid"
             style={{
-              backgroundImage: `url(${SmallBg})`,
+              backgroundImage: `url(${imgLink})`,
               width: "auto",
               height: "100vh",
               backgroundRepeat: "no-repeat",
@@ -56,9 +56,7 @@ const Banner = () => {
               // poster={bannerImg}
               muted
               autoPlay={true}
-              src={
-                "https://res.cloudinary.com/jaffa/video/upload/v1644611348/homepage_video_llnlqn.mp4"
-              }
+              src={videoLink}
               loop
             >
               <BigPlayButton position="center" />

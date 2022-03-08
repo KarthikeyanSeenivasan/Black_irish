@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import AOS from "aos"
 import { aboutPageData } from "../Data/data"
 import Consumer from "../../context/Consumer"
+import aboutData from "../../site/about.json"
 
 const About = () => {
   useEffect(() => {
@@ -18,25 +19,28 @@ const About = () => {
 
   return (
     <>
-      <Consumer>
-        <Seo title="About" description="Black Irish" />
-        <Layout>
-          <>
-            <div className={globalStyle.page}>
-              <div className={globalStyle.pageTitle}>
-                <h1>About</h1>
-              </div>
-              <div className={globalStyle.border}></div>
+      <Seo
+        title={aboutData.title ? aboutData.title : "About"}
+        description="Black Irish"
+      />
+      <Layout>
+        <>
+          <div className={globalStyle.page}>
+            <div className={globalStyle.pageTitle}>
+              <h1>About</h1>
             </div>
-            <div className="container d-flex justify-content-center my-5">
-              <AboutComponent data={aboutPageData} />
-            </div>
-            <div className="my-5">
-              <InstaFeed />
-            </div>
-          </>
-        </Layout>
-      </Consumer>
+            <div className={globalStyle.border}></div>
+          </div>
+          <div className="container d-flex justify-content-center my-5">
+            <AboutComponent
+              data={aboutData.section ? aboutData.section : aboutPageData}
+            />
+          </div>
+          <div className="my-5">
+            <InstaFeed />
+          </div>
+        </>
+      </Layout>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from "react"
 import useWindowSize from "../../../hooks/useWindowSize"
 import * as globalStyle from "../../styles/global.module.css"
 import * as aboutStyle from "../../styles/about.module.css"
+
 function About({ data }) {
   const { width } = useWindowSize()
   return (
@@ -58,7 +59,7 @@ function About({ data }) {
                     data-aos-duration="750"
                   >
                     <h4>{item?.title}</h4>
-                    <h6>{item?.subTitle}</h6>
+                    <h6>{item?.description}</h6>
                   </div>
                 </div>
               </div>

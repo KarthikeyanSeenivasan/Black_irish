@@ -79,17 +79,17 @@ export const recipesData = [
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604631/Black_irish/recipes/recipe1_s3y39z.png",
     subtitleOne: "Ingredients",
     pointsOne: [
-      "2 oz. Vodka",
-      "1 oz. coffee liqueur",
-      "1 oz. Black Irish White Chocolate",
-      "½ oz. cream",
-      "Chocolate syrup to drizzle",
+      { point: "2 oz. Vodka" },
+      { point: "1 oz. coffee liqueur" },
+      { point: "1 oz. Black Irish White Chocolate" },
+      { point: "½ oz. cream" },
+      { point: "Chocolate syrup to drizzle" },
     ],
     subtitleTwo: "Directions",
     pointsTwo: [
-      "Add vodka and coffee liqueur to glass filled with ice",
-      "Slowly pour Black Irish White Chocolate and cream over ice",
-      "Garnish with drizzle of chocolate syrup and serve",
+      { point: "Add vodka and coffee liqueur to glass filled with ice" },
+      { point: "Slowly pour Black Irish White Chocolate and cream over ice" },
+      { point: "Garnish with drizzle of chocolate syrup and serve" },
     ],
   },
   {
@@ -99,19 +99,41 @@ export const recipesData = [
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604629/Black_irish/recipes/recipe2_betqav.png",
     subtitleOne: "Ingredients",
     pointsOne: [
-      "6 oz. prepared hot coffee",
-      "1 oz. Irish whiskey ",
-      "1⁄2 oz. coffee liqueur",
-      "1 1⁄2 oz. Black Irish Original",
-      "Whipped cream to top",
-      "Optional: cocoa powder for dusting ",
+      {
+        point: "6 oz. prepared hot coffee",
+      },
+      {
+        point: "1 oz. Irish whiskey ",
+      },
+      {
+        point: "1⁄2 oz. coffee liqueur",
+      },
+      {
+        point: "1 1⁄2 oz. Black Irish Original",
+      },
+      {
+        point: "Whipped cream to top",
+      },
+      {
+        point: "Optional: cocoa powder for dusting ",
+      },
     ],
     subtitleTwo: "Directions",
     pointsTwo: [
-      "Fill glass mug or footed glass mug with hot water and let stand 1-2 minutes to ",
-      "heat up glass; pour out. ",
-      "Fill glass with coffee, Irish Whiskey and Black Irish Original, and stir ",
-      "Dust cocoa powder over whipped cream, and serve ",
+      {
+        point:
+          "Fill glass mug or footed glass mug with hot water and let stand 1-2 minutes to ",
+      },
+      {
+        point: "heat up glass; pour out. ",
+      },
+      {
+        point:
+          "Fill glass with coffee, Irish Whiskey and Black Irish Original, and stir ",
+      },
+      {
+        point: "Dust cocoa powder over whipped cream, and serve ",
+      },
     ],
   },
   {
@@ -121,15 +143,18 @@ export const recipesData = [
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604635/Black_irish/recipes/recipe3_ytikk9.png",
     subtitleOne: "Ingredients",
     pointsOne: [
-      "1 cup prepared hot chocolate ",
-      "2 oz. Black Irish Salted Caramel",
-      "Whipped cream to top",
-      "Caramel syrup to drizzle",
+      { point: "1 cup prepared hot chocolate " },
+      { point: "2 oz. Black Irish Salted Caramel" },
+      { point: "Whipped cream to top" },
+      { point: "Caramel syrup to drizzle" },
     ],
     subtitleTwo: "Directions",
     pointsTwo: [
-      "Fill mug with hot chocolate and Black Irish Salted Caramel, and stir",
-      "Top with whipped cream",
+      {
+        point:
+          "Fill mug with hot chocolate and Black Irish Salted Caramel, and stir",
+      },
+      { point: "Top with whipped cream" },
     ],
   },
   {
@@ -139,18 +164,37 @@ export const recipesData = [
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604635/Black_irish/recipes/recipe4_rwrxmy.png",
     subtitleOne: "Ingredients",
     pointsOne: [
-      "2 oz. cooled espresso or cold brew concentrate",
-      "1 oz. vodka",
-      "1⁄2 oz. coffee liqueur",
-      "1⁄2 oz. Black Irish Original",
-      "Pinch of cinnamon",
+      {
+        point: "2 oz. cooled espresso or cold brew concentrate",
+      },
+      {
+        point: "1 oz. vodka",
+      },
+      {
+        point: "1⁄2 oz. coffee liqueur",
+      },
+      {
+        point: "1⁄2 oz. Black Irish Original",
+      },
+      {
+        point: "Pinch of cinnamon",
+      },
     ],
     subtitleTwo: "Directions",
     pointsTwo: [
-      "Add espresso, vodka, coffee liqueur and Black Irish Original to shaker with ice,",
-      "and shake vigorously ",
-      "Strain into coupe glass or martini glass of choice",
-      "Top with pinch of cinnamon",
+      {
+        point:
+          "Add espresso, vodka, coffee liqueur and Black Irish Original to shaker with ice,",
+      },
+      {
+        point: "and shake vigorously ",
+      },
+      {
+        point: "Strain into coupe glass or martini glass of choice",
+      },
+      {
+        point: "Top with pinch of cinnamon",
+      },
     ],
   },
   {
@@ -160,22 +204,41 @@ export const recipesData = [
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604636/Black_irish/recipes/recipe5_dsv5vr.png",
     subtitleOne: "Ingredients",
     pointsOne: [
-      "1 cup vanilla ice cream",
-      "3⁄4 to 1 cup milk, depending on desired consistency",
-      "3 oz. of favorite Black Irish flavor ",
-      "Whipped cream to top",
-      "Optional garnishes: sprinkles, chocolate shavings, mini chocolate chips, ",
-      "crumbled cookies, chopped nuts",
+      {
+        point: "1 cup vanilla ice cream",
+      },
+      {
+        point: "3⁄4 to 1 cup milk, depending on desired consistency",
+      },
+      {
+        point: "3 oz. of favorite Black Irish flavor ",
+      },
+      {
+        point: "Whipped cream to top",
+      },
+      {
+        point:
+          "Optional garnishes: sprinkles, chocolate shavings, mini chocolate chips, ",
+      },
+      {
+        point: "crumbled cookies, chopped nuts",
+      },
     ],
     subtitleTwo: "Directions",
     pointsTwo: [
-      "Blend together ice cream, 3⁄4 cup milk and Black Irish until smooth; add additional ",
-      "milk as needed to reach desired consistency",
-      "Rim glass with chocolate syrup and dip into favorite garnish, such as sprinkles",
-      "Drizzle chocolate syrup onto inner sides of glass ",
-      "Carefully pour milkshake into glass ",
-      "Top with whipped cream and additional favorite garnishes",
-      "Serve with straw",
+      {
+        point:
+          "Blend together ice cream, 3⁄4 cup milk and Black Irish until smooth; add additional ",
+      },
+      { point: "milk as needed to reach desired consistency" },
+      {
+        point:
+          "Rim glass with chocolate syrup and dip into favorite garnish, such as sprinkles",
+      },
+      { point: "Drizzle chocolate syrup onto inner sides of glass " },
+      { point: "Carefully pour milkshake into glass " },
+      { point: "Top with whipped cream and additional favorite garnishes" },
+      { point: "Serve with straw" },
     ],
   },
 ]
@@ -211,7 +274,7 @@ export const aboutPageData = [
   {
     title:
       "Black Irish is made with aged Irish whiskey and a unique special blend to provide a rich and decadent taste.",
-    subTitle:
+    description:
       " Made to perfection, Black Irish is crafted in Ireland under special conditions to ensure superior quality. ",
     // desc: " Made to perfection, Black Irish is crafted in Ireland under special conditions to ensure superior quality. ",
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645623357/Black_irish/about_img_ehqzlp.png",
@@ -219,7 +282,7 @@ export const aboutPageData = [
   {
     title:
       "Perfect to enjoy year-round, the beverage lends itself to both summer and winter specialty cocktails, and pairs well with every celebration. ",
-    subTitle:
+    description:
       "Because of its creamy texture and rich flavor, Black Irish can be used in a variety of cocktails, poured over ice cream or simply enjoyed over ice.",
     // desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604552/Black_irish/home_gif2_iqxq8i.gif",

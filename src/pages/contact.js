@@ -58,7 +58,7 @@ function Contact() {
       })
       try {
         const response = await fetch(
-          `https://v1.nocodeapi.com/karthiladder/google_sheets/CLSwPSeipZhmOXsM?tabId=Sheet1`,
+          `https://v1.nocodeapi.com/tjscivsav/google_sheets/lQwJOgRcsXupZYHs?tabId=Sheet1`,
           {
             method: `POST`,
             headers: {
