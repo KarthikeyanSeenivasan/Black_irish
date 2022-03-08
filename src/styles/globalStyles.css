@@ -420,6 +420,9 @@ html body {
 .custom_col {
   width: 50%;
 }
+.mobile_navbar {
+  display: none;
+}
 
 @media screen and (max-width: 1290px) {
   .nav_links {
@@ -437,6 +440,16 @@ html body {
 }
 
 @media screen and (max-width: 950px) {
+  .navbar {
+    display: none;
+  }
+  .mobile_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
   .mobile_nav {
     display: block;
     position: absolute;

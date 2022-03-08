@@ -112,42 +112,27 @@ function Contact() {
           <div className="container my-5">
             <div className="row d-flex flex-row-reverse">
               <div className="col-lg-7 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center">
-                <div
-                  data-aos="zoom-out"
-                  data-aos-duration="1500"
-                  dat-aos-delay="100"
-                  className={contactStyle.butterfly_img}
-                  style={{
-                    backgroundImage: `url(${imgSrc})`,
-                  }}
-                ></div>
-                <>
-                  {/* <img
-                data-aos="zoom-out"
-                data-aos-duration="1500"
-                dat-aos-delay="100"
-                width={
-                  width < 400
-                    ? 300
-                    : width < 500
-                    ? 350
-                    : width < 700
-                    ? 358
-                    : 560
-                }
-                height={
-                  width < 400
-                    ? 294
-                    : width < 500
-                    ? 343
-                    : width < 700
-                    ? 343
-                    : 550
-                }
-                src={imgSrc}
-                alt="bottle_img"
-              /> */}
-                </>
+                {width < 850 ? (
+                  <div
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    dat-aos-delay="100"
+                    className={contactStyle.butterfly_img}
+                    style={{
+                      backgroundImage: `url(https://res.cloudinary.com/dq4fvmcte/image/upload/v1645812942/Black_irish/output-onlinegiftools_hhd4r9.png)`,
+                    }}
+                  ></div>
+                ) : (
+                  <div
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    dat-aos-delay="100"
+                    className={contactStyle.butterfly_img}
+                    style={{
+                      backgroundImage: `url(${imgSrc})`,
+                    }}
+                  ></div>
+                )}
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 col-12 px-1 ">
                 <div className="d-flex justify-content-center">

@@ -86,8 +86,13 @@ const Header = () => {
           </ul>
         </div>
       </div>
-        <>
-        <div className="navbar">
+      <>
+        <div className="mobile_navbar">
+          <div className="mx-5 nav_logo">
+            <Link to="/">
+              <img src={logo} alt="" width={76.7} height={65} />
+            </Link>
+          </div>
           <div className="mobile_nav">
             <FontAwesomeIcon
               className="mx-3"
@@ -151,8 +156,8 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          </div>
-        </>
+        </div>
+      </>
     </>
   )
 }
