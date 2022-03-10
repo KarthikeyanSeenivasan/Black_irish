@@ -6,7 +6,6 @@ import bottleImg from "../images/center_bottle.png"
 import * as pressStyle from "../styles/press.module.css"
 import useWindowSize from "../../hooks/useWindowSize"
 import { Link } from "gatsby"
-import Consumer from "../../context/Consumer"
 
 const titleImgData = [
   {

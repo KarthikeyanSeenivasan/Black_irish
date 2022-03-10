@@ -9,7 +9,6 @@ import Aos from "aos"
 import "../styles/slick.css"
 import { useLocation } from "@reach/router"
 import { productData } from "../Data/data"
-import Consumer from "../../context/Consumer"
 
 function Products() {
   const settings = {

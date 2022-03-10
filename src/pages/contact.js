@@ -17,7 +17,6 @@ import ContactSign from "../components/ContactSign"
 import { useTimeout } from "usehooks-ts"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import Consumer from "../../context/Consumer"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 
 function Contact() {

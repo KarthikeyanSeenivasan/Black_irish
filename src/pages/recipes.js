@@ -6,7 +6,6 @@ import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
 import Aos from "aos"
 import { recipesData } from "../Data/data"
-import Consumer from "../../context/Consumer"
 
 function Recipes() {
   useEffect(() => {

@@ -56,7 +56,7 @@ const Banner = ({ videoLink, imgLink }) => {
               // poster={bannerImg}
               muted
               autoPlay={true}
-              src={videoLink}
+              // src={videoLink}
               loop
             >
               <BigPlayButton position="center" />

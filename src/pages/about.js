@@ -6,7 +6,6 @@ import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
 import AOS from "aos"
 import { aboutPageData } from "../Data/data"
-import Consumer from "../../context/Consumer"
 import aboutData from "../../site/about.json"
 
 const About = () => {

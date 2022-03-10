@@ -16,7 +16,6 @@ import {
   titleImgsDataOne,
   titleImgsDataTwo,
 } from "../Data/data"
-import Consumer from "../../context/Consumer"
 
 const Home = () => {
   useEffect(() => {
