@@ -9,6 +9,7 @@ import Frame7 from "../components/Frame7"
 import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
 import Aos from "aos"
+import useWindowSize from "../../hooks/useWindowSize"
 import {
   productData,
   recipesData,
@@ -18,6 +19,7 @@ import {
 } from "../Data/data"
 
 const Home = () => {
+  const { width } = useWindowSize()
   useEffect(() => {
     Aos.init({
       delay: 100,

@@ -13,6 +13,7 @@
 .image {
   border-radius: 25px;
   margin: 0 20px;
+  filter: drop-shadow(-6px 6px 10px rgba(0, 0, 0, 0.25));
 }
 
 .content {
@@ -75,5 +76,8 @@
   .frame {
     width: 100%;
     margin: 15px 0;
+  }
+  .cardTitle {
+    text-align: center !important;
   }
 }

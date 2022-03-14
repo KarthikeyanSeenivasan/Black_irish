@@ -1,113 +1,161 @@
 backend:
   name: git-gateway
-  repo: KarthikeyanSeenivasan/Black_irish
+  repo: tjscivsav/black-irish
   branch: main
-media_folder: "images/uploads"
+media_folder: src/images/uploads
 
 collections:
-  - name: "home"
-    label: "Home"
+  - name: socialLinks
+    label: Social Links
+    files:
+      - label: Links
+        name: socialLinks
+        file: site/socialLinks.json
+        fields:
+          - { label: Twitter, name: twitter, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: TikTok, name: tiktok, widget: string }
+  - name: footer
+    label: Footer
+    files:
+      - label: Subscribe
+        name: Links
+        file: site/footer.json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: string }
+
+  - name: home
+    label: Home
     files:
       - label: Content
         name: content
         file: site/home.json
         fields:
           - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
+              label: SEO Title,
+              name: seoTitle,
+              widget: string,
               required: false,
             }
-          - { label: "Video Banner", name: banner_video, widget: string }
-          - { label: "Image Banner", name: banner_img, widget: image }
+          - {
+              label: SEO Description,
+              name: seoDescription,
+              widget: string,
+              required: false,
+            }
+          - { label: Page Title, name: title, widget: string, required: false }
+          - { label: Video Banner, name: banner_video, widget: string }
+          - { label: Image Banner, name: banner_img, widget: image }
           - label: Section
             name: section
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "desc", widget: "string" }
-              - { label: "Image", name: "img", widget: "image" }
-              - { label: "Button Name", name: "btnName", widget: "string" }
-              - { label: "Page Name", name: "link", widget: "string" }
-  - name: "about"
-    label: "About"
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: string }
+              - { label: Image, name: img, widget: image }
+              - { label: Button Name, name: btnName, widget: string }
+              - { label: Page Name, name: link, widget: string }
+          - label: Poster Content
+            name: poster
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }
+              - { label: Button Name, name: btnName, widget: string }
+  - name: about
+    label: About
     files:
       - label: Content
         name: content
         file: site/about.json
         fields:
           - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
+              label: SEO Title,
+              name: seoTitle,
+              widget: string,
               required: false,
             }
+          - {
+              label: SEO Description,
+              name: seoDescription,
+              widget: string,
+              required: false,
+            }
+          - { label: Page Title, name: title, widget: string, required: false }
           - label: Section
             name: section
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "string" }
-              - { label: "Image", name: "img", widget: "image" }
-  - name: "products"
-    label: "Products"
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: string }
+              - { label: Image, name: img, widget: image }
+  - name: products
+    label: Products
     files:
       - label: Content
         name: content
         file: site/product.json
         fields:
           - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
+              label: SEO Title,
+              name: seoTitle,
+              widget: string,
               required: false,
             }
+          - {
+              label: SEO Description,
+              name: seoDescription,
+              widget: string,
+              required: false,
+            }
+          - { label: Page Title, name: title, widget: string, required: false }
           - label: Section
             name: section
             widget: list
             fields:
-              - { label: "Id", name: "id", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Image", name: "img", widget: "image" }
-              - { label: "Description", name: "dec", widget: "string" }
-  - name: "recipes"
-    label: "Recipes"
+              - { label: Id, name: id, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: img, widget: image }
+              - { label: Description, name: desc, widget: string }
+  - name: recipes
+    label: Recipes
     files:
       - label: Content
         name: content
         file: site/recipe.json
         fields:
           - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
+              label: SEO Title,
+              name: seoTitle,
+              widget: string,
               required: false,
             }
+          - {
+              label: SEO Description,
+              name: seoDescription,
+              widget: string,
+              required: false,
+            }
+          - { label: Page Title, name: title, widget: string, required: false }
           - label: Section
             name: section
             widget: list
             fields:
-              - { label: "Id", name: "id", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Nick Title", name: "nickTitle", widget: "string" }
-              - { label: "Image", name: "img", widget: "image" }
-              - {
-                  label: "Sub-title-one",
-                  name: "subtitleOne",
-                  widget: "string",
-                }
-              - label: "Point-One"
-                name: "pointOne"
-                widget: "list"
+              - { label: Id, name: id, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Nick Title, name: nickTitle, widget: string }
+              - { label: Image, name: img, widget: image }
+              - { label: Sub-title-one, name: subtitleOne, widget: string }
+              - label: Point-One
+                name: pointOne
+                widget: list
                 fields:
-                  - { label: "point", name: "point", widget: "string" }
-              - {
-                  label: "Sub-title-Two",
-                  name: "subtitleTwo",
-                  widget: "string",
-                }
-              - label: "Point-Two"
-                name: "pointTwo"
-                widget: "list"
+                  - { label: point, name: point, widget: string }
+              - { label: Sub-title-Two, name: subtitleTwo, widget: string }
+              - label: Point-Two
+                name: pointTwo
+                widget: list
                 fields:
-                  - { label: "point", name: "point", widget: "string" }
+                  - { label: point, name: point, widget: string }

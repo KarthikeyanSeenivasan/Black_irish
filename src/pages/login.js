@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { getImage, StaticImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 import useWindowSize from "../../hooks/useWindowSize"
+import { handleLogin } from "../utils/auth"
 
-const AgeConfirmPopup = ({ handleSubmitAge }) => {
+const AgeConfirmPopup = () => {
   const { width } = useWindowSize()
+
+  const handleSubmitAge = () => {
+    handleLogin()
+  }
 
   const data = useStaticQuery(
     graphql`
@@ -69,16 +74,16 @@ const AgeConfirmPopup = ({ handleSubmitAge }) => {
             <div className="confirm-btn-part">
               <h3>Are you Over 21?</h3>
               <div className="confirm-btn">
-                <a href="#" className="yes-btn" onClick={handleSubmitAge}>
+                <Link to="/" onClick={handleSubmitAge} className="yes-btn">
                   Yes
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="no-btn"
                   onClick={() => alert("Age need to be more than 21")}
                 >
                   No
-                </a>
+                </Link>
               </div>
             </div>
             <p>

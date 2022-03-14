@@ -1,24 +1,9 @@
 import React from "react"
+import * as styles from "../styles/frame6.module.css"
 import useWindowSize from "../../hooks/useWindowSize"
 
 function Frame6({ data }) {
   const { width } = useWindowSize()
-  // const data = useStaticQuery(graphql`
-  //   query one {
-  //     allFile(filter: { relativeDirectory: { eq: "set1" }, relativePath: {} }) {
-  //       edges {
-  //         node {
-  //           base
-  //           childImageSharp {
-  //             fluid {
-  //               ...GatsbyImageSharpFluid
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
 
   return (
     <>
@@ -31,8 +16,12 @@ function Frame6({ data }) {
             data-aos="zoom-in"
             data-aos-duration={`${1000 * i}`}
           >
-            <div style={{ maxWidth: "200px" }}>
-              <a href={item.link} target="_blank">
+            <div className={styles.isgBox} style={{ maxWidth: "200px" }}>
+              <a
+                href={item.link}
+                target="_blank"
+                style={{ alignItems: "center" }}
+              >
                 <img
                   width={width < 1200 ? 150 : width < 1930 ? 190 : 220}
                   src={item.src}
@@ -44,23 +33,6 @@ function Frame6({ data }) {
             </div>
           </div>
         ))}
-        {/* {data.allFile.edges.map(({ node }, i) => (
-          <div className="col-lg-2 col-md-12 col-sm-12 col-12 my-2">
-            <div data-aos="zoom-in-up" data-aos-duration={`${750 * i}`}>
-              <Img
-                style={
-                  width < 600
-                    ? width < 500
-                      ? { maxWidth: "130px" }
-                      : { maxWidth: "161px" }
-                    : { maxWidth: "250px" }
-                }
-                fluid={node.childImageSharp.fluid}
-                alt={node.base}
-              />
-            </div>
-          </div>
-        ))} */}
       </div>
     </>
   )

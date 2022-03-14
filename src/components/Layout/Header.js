@@ -9,6 +9,7 @@ import {
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import logo from "../../images/logo.png"
+import SocialLinks from "../../../site/socialLinks.json"
 
 export const navLinks = [
   {
@@ -37,12 +38,14 @@ export const navLinks = [
   },
 ]
 
+const pagesLink = navLinks
+
 const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className="lg_navbar">
-        <div className="navbar">
+      <div className="lgnavbar">
+        <div className="lg_navBar">
           <div className="mx-5 nav_logo">
             <Link to="/">
               <img src={logo} alt="" width={76.7} height={65} />
@@ -50,7 +53,7 @@ const Header = () => {
           </div>
           <div className="nav_content">
             <ul className="nav_links">
-              {navLinks.map((item, i) => {
+              {pagesLink.map((item, i) => {
                 return (
                   <>
                     <li className="nav_item" key={i}>
@@ -65,33 +68,40 @@ const Header = () => {
                 <Link
                   target="_blank"
                   className="text-black social_icon mx-2"
-                  href="https://www.facebook.com/goblackirish/"
+                  href={
+                    SocialLinks?.facebook
+                      ? SocialLinks?.facebook
+                      : "https://www.facebook.com/goblackirish/"
+                  }
                 >
                   <FontAwesomeIcon icon={faFacebookF} size="2x" />
                 </Link>
                 <Link
                   target="_blank"
                   className="text-black social_icon mx-2"
-                  href="https://www.instagram.com/goblackirish/"
+                  href={
+                    SocialLinks?.instagram
+                      ? SocialLinks?.instagram
+                      : "https://www.instagram.com/goblackirish/"
+                  }
                 >
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </Link>
                 <Link
                   target="_blank"
                   className="text-black social_icon mx-2"
-                  href="https://twitter.com/goblackirish?lang=en"
+                  href={
+                    SocialLinks?.twitter
+                      ? SocialLinks?.twitter
+                      : "https://twitter.com/goblackirish?lang=en"
+                  }
                 >
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="mobile_navbar">
-            <div className="mx-5 nav_logo">
-              <Link to="/">
-                <img src={logo} alt="" width={76.7} height={65} />
-              </Link>
-            </div>
+          <>
             <div className="mobile_nav">
               <FontAwesomeIcon
                 className="mx-3"
@@ -112,7 +122,7 @@ const Header = () => {
                 size="2x"
               />
               <ul className="nav_mobile_links">
-                {navLinks.map((item, i) => {
+                {pagesLink.map((item, i) => {
                   return (
                     <li className="nav_mobile_item" key={i}>
                       <Link to={item.link}>{item.name} </Link>
@@ -126,28 +136,44 @@ const Header = () => {
                     <Link
                       target="_blank"
                       className="text-white social_icon mx-2"
-                      href="https://www.instagram.com/goblackirish/"
+                      href={
+                        SocialLinks?.facebook
+                          ? SocialLinks?.facebook
+                          : "https://www.facebook.com/goblackirish/"
+                      }
                     >
                       <FontAwesomeIcon icon={faFacebookF} size="2x" />
                     </Link>
                     <Link
                       target="_blank"
                       className="text-white social_icon mx-2"
-                      href="https://www.instagram.com/goblackirish/"
+                      href={
+                        SocialLinks?.instagram
+                          ? SocialLinks?.instagram
+                          : "https://www.instagram.com/goblackirish/"
+                      }
                     >
                       <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </Link>
                     <Link
                       target="_blank"
                       className="text-white social_icon mx-2"
-                      href="https://twitter.com/goblackirish?lang=en"
+                      href={
+                        SocialLinks?.twitter
+                          ? SocialLinks?.twitter
+                          : "https://twitter.com/goblackirish?lang=en"
+                      }
                     >
                       <FontAwesomeIcon icon={faTwitter} size="2x" />
                     </Link>
                     <Link
                       target="_blank"
                       className="text-white social_icon mx-2"
-                      href="https://www.tiktok.com/@goblackirish"
+                      href={
+                        SocialLinks?.tiktok
+                          ? SocialLinks?.facebook
+                          : "https://www.tiktok.com/@goblackirish"
+                      }
                     >
                       <FontAwesomeIcon icon={faTiktok} size="2x" />
                     </Link>
@@ -155,7 +181,7 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </>
         </div>
       </div>
     </>

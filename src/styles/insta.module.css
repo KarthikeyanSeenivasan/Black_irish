@@ -1,8 +1,12 @@
 .img {
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -khtml-border-radius: 25px;
   margin-bottom: 20px;
   width: 200px;
   height: 200px;
+  filter: drop-shadow(-6px 4px 6px rgba(0, 0, 0, 0.25));
 }
 .feedTwo {
   justify-content: center;
@@ -24,7 +28,7 @@
     display: none !important;
   }
   .img {
-    width: 145px;
-    height: 145px;
+    width: 100%;
+    height: 165px;
   }
 }

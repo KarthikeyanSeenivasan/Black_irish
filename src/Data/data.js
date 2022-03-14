@@ -245,7 +245,7 @@ export const recipesData = [
 
 export const productData = [
   {
-    id: "#original",
+    id: "original",
     title: "Original",
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645811315/Black_irish/products/product1_shxrx4.png",
     desc: `Black Irish Original Irish Cream Liqueur perfectly blends
@@ -254,19 +254,19 @@ export const productData = [
            aromas and flavors of fresh roasted coffee, milk chocolate
            and warm spices. The perfect Irish Cream for sipping
            straight or blending in your favorite cocktails.
-           087752029084`,
+           `,
   },
   {
-    id: "#saltedcaramel",
+    id: "saltedcaramel",
     title: "Salted Caramel",
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645811491/Black_irish/products/product2_ospmr9.png",
-    desc: "We've taken our Original Irish Cream to the next level with Black Irish Salted Caramel Irish Cream Liqueur. Rich and creamy with sweet buttery notes of caramel and a touch of salt brings this to the next level. This delectable liqueur can be enjoyed on its own over ice, drizzled over ice cream or added to any milkshake! 087752029145",
+    desc: "We've taken our Original Irish Cream to the next level with Black Irish Salted Caramel Irish Cream Liqueur. Rich and creamy with sweet buttery notes of caramel and a touch of salt brings this to the next level. This delectable liqueur can be enjoyed on its own over ice, drizzled over ice cream or added to any milkshake!",
   },
   {
-    id: "#whitechocolate",
+    id: "whitechocolate",
     title: "White Chocolate",
     img: "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645811490/Black_irish/products/product3_slg46q.png",
-    desc: "Silky, creamy and smooth, Black Irish White Chocolate Irish Cream Liqueur is just as delicious as our Original Irish Cream Liqueur and is made with Belgian white chocolate for a refined and subtle chocolate flavor: Enjoy on its own, drizzled over fresh fruit or added to your coffee or hot chocolate for a delightful sweet treat. 087752029114",
+    desc: "Silky, creamy and smooth, Black Irish White Chocolate Irish Cream Liqueur is just as delicious as our Original Irish Cream Liqueur and is made with Belgian white chocolate for a refined and subtle chocolate flavor: Enjoy on its own, drizzled over fresh fruit or added to your coffee or hot chocolate for a delightful sweet treat.",
   },
 ]
 

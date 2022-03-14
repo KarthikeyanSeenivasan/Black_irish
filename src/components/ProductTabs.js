@@ -8,9 +8,8 @@ import useWindowSize from "../../hooks/useWindowSize"
 import Slider from "react-slick"
 import "../styles/slick.css"
 
-const ProductTabs = ({ productDetails, selected }) => {
+const ProductTabs = () => {
   const [index, setIndex] = useState(0)
-  const [flip, setFlip] = useState(false)
   const { width } = useWindowSize()
 
   const settings = {

@@ -1,41 +1,33 @@
-const isBrowser = typeof window !== `undefined`
+import Cookies from "js-cookie"
 
-const getUser = () =>
-  window.localStorage.gatsbyUser
-    ? JSON.parse(window.localStorage.gatsbyUser)
-    : {}
+export const isBrowser = () => typeof window !== "undefined"
 
-const setUser = user => (window.localStorage.gatsbyUser = JSON.stringify(user))
+export const getUser = () =>
+  // isBrowser() && window.localStorage.getItem("ageConfirm")
+  //   ? JSON.parse(window.localStorage.getItem("ageConfirm"))
+  //   : false
+  Cookies.get("ageConfirm") ? Cookies.get("ageConfirm") : false
 
-export const handleLogin = ({ username, password }) => {
-  if (!isBrowser) return false
+const setValue = user => {
+  // window.localStorage.setItem("ageConfirm", JSON.stringify(user))
+  var date = new Date()
+  var midnight = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate(),
+    23,
+    59,
+    59
+  )
+  let expired = "; expires=" + midnight.toGMTString()
+  document.cookie = `ageConfirm=${true};expires=${expired}`
+}
 
-  if (username === `gatsby` && password === `demo`) {
-    console.log(`Credentials match! Setting the active user.`)
-    return setUser({
-      name: `Jim`,
-      legalName: `James K. User`,
-      email: `jim@example.org`,
-    })
-  }
-
-  return false
+export const handleLogin = () => {
+  setValue(true)
 }
 
 export const isLoggedIn = () => {
-  if (!isBrowser) return false
-
   const user = getUser()
-
-  return !!user.email
-}
-
-export const getCurrentUser = () => isBrowser && getUser()
-
-export const logout = callback => {
-  if (!isBrowser) return
-
-  console.log(`Ensuring the \`gatsbyUser\` property exists.`)
-  setUser({})
-  callback()
+  return user
 }

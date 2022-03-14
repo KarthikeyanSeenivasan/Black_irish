@@ -10,23 +10,21 @@ const Signature = ({ startAnim }) => {
   const heart2 = useRef(null)
 
   useEffect(() => {
-    if (startAnim === true) {
-      const svgArr = [
-        letterM.current,
-        letterA1.current,
-        letterR1.current,
-        letterRi.current,
-        letterAh.current,
-        heart1.current,
-        heart2.current,
-      ]
+    const svgArr = [
+      letterM.current,
+      letterA1.current,
+      letterR1.current,
+      letterRi.current,
+      letterAh.current,
+      heart1.current,
+      heart2.current,
+    ]
 
-      svgArr.forEach(function (el) {
-        el?.setAttribute("stroke-dasharray", Math.ceil(el?.getTotalLength()))
-        el?.setAttribute("stroke-dashoffset", Math.ceil(el?.getTotalLength()))
-      })
-    }
-  }, [startAnim])
+    svgArr.forEach(function (el) {
+      el?.setAttribute("stroke-dasharray", Math.ceil(el?.getTotalLength()))
+      el?.setAttribute("stroke-dashoffset", Math.ceil(el?.getTotalLength()))
+    })
+  }, [])
 
   return (
     <div className="signature-img">

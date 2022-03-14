@@ -15,9 +15,9 @@
 }
 
 .center_img img {
-  width: 200px;
+  width: 275px;
   height: 400px;
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
 }
 
 .companyLogoMain img {
@@ -82,7 +82,7 @@
   }
 
   .center_img img {
-    width: 75px;
+    width: 100px;
     height: 150px;
     object-fit: contain;
   }
@@ -91,7 +91,6 @@
     width: 65px;
   }
 }
-
 
 /* .circle:nth-child(2) {
   transform: rotate(270deg) translateX(22em) rotate(-270deg);
@@ -126,7 +125,6 @@
 .circle:nth-child(10) {
   transform: rotate(198deg) translateX(29em) translateY(-4em) rotate(-198deg);
 } */
-
 
 /* 
 .circle_position {

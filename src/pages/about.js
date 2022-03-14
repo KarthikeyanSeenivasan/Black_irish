@@ -6,7 +6,8 @@ import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
 import AOS from "aos"
 import { aboutPageData } from "../Data/data"
-import aboutData from "../../site/about.json"
+import AboutData from "../../site/about.json"
+import useWindowSize from "../../hooks/useWindowSize"
 
 const About = () => {
   useEffect(() => {
@@ -15,24 +16,32 @@ const About = () => {
       once: true,
     })
   }, [])
-
+  const { width } = useWindowSize()
   return (
     <>
       <Seo
-        title={aboutData.title ? aboutData.title : "About"}
-        description="Black Irish"
+        title={AboutData?.seoTitle ? AboutData?.seoTitle : "About"}
+        description={
+          AboutData?.seoDescription ? AboutData?.seoDescription : "Black Irish"
+        }
       />
       <Layout>
         <>
           <div className={globalStyle.page}>
             <div className={globalStyle.pageTitle}>
-              <h1>About</h1>
+              <h1>{AboutData?.title ? AboutData?.title : "About"}</h1>
             </div>
             <div className={globalStyle.border}></div>
           </div>
-          <div className="container d-flex justify-content-center my-5">
+          <div
+            className={
+              width < 765
+                ? "container d-flex justify-content-center my-5 px-3"
+                : "container d-flex justify-content-center my-5"
+            }
+          >
             <AboutComponent
-              data={aboutData.section ? aboutData.section : aboutPageData}
+              data={AboutData?.section ? AboutData?.section : aboutPageData}
             />
           </div>
           <div className="my-5">

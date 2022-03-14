@@ -5,6 +5,7 @@ import useWindowSize from "../../hooks/useWindowSize"
 
 const Section = ({ data }) => {
   const { width } = useWindowSize()
+  //home section
   return (
     <>
       <div className={home.container}>
@@ -14,7 +15,7 @@ const Section = ({ data }) => {
               key={i}
               className={`mb-5 ${home.section}`}
               style={
-                i % 2 === 0
+                i % 2 == 0
                   ? { flexDirection: "row-reverse" }
                   : { flexDirection: "row" }
               }
@@ -40,7 +41,7 @@ const Section = ({ data }) => {
                   }
                   height={
                     width < 400
-                      ? 210
+                      ? 260
                       : width < 450
                       ? 285
                       : width < 881

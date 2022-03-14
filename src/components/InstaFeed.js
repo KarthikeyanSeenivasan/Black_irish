@@ -33,8 +33,8 @@ function InstaFeed() {
                 <div
                   key={i}
                   className={
-                    width < 500
-                      ? "col-6 d-flex justify-content-center"
+                    width < 500 && i % 2 === 0
+                      ? "col-6 d-flex justify-content-center pe-1"
                       : "col d-flex justify-content-center"
                   }
                 >
@@ -50,46 +50,12 @@ function InstaFeed() {
                         alt="Insta Feed"
                       />
                     </Link>
-                    {/* <Img
-                    className={insta.img}
-                    fluid={item.node.localImage.childImageSharp.fluid}
-                    width={200}
-                    height={200}
-                    alt=""
-                  /> */}
                   </div>
                 </div>
               </>
             )
           })}
         </div>
-        {/* <div className={`row ${insta.feedTwo}`}>
-          {feedTwo?.slice(0, 10).map((item, i) => (
-            <>
-              <div
-                key={i}
-                className={
-                  width < 500
-                    ? "col-6 d-flex justify-content-center"
-                    : "col d-flex justify-content-center"
-                }
-              >
-                <div
-                  data-aos="zoom-out"
-                  data-aos-duration="800"
-                  data-aos-delay="50"
-                >
-                  <img
-                    src={item.img}
-                    width={width < 400 ? 120 : 200}
-                    height={width < 400 ? 120 : 200}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </>
-          ))}
-        </div> */}
       </div>
     </>
   )

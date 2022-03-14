@@ -87,3 +87,10 @@
     margin: 15px 0;
   }
 }
+@media screen and (max-width: 400px) {
+  .image {
+    width: 100vw;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

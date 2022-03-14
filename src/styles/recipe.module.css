@@ -54,3 +54,21 @@
   line-height: 30px;
   color: #1e2722;
 }
+.recipeImage {
+  filter: drop-shadow(-6px 6px 10px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 428px) {
+  .imageBox {
+    text-align: center;
+  }
+  .individual {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .recipeTitle {
+    text-align: center;
+  }
+  .recipeImage {
+    margin-bottom: 35px;
+  }
+}

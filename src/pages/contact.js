@@ -103,7 +103,7 @@ function Contact() {
         />
         <div className={globalStyle.page}>
           <div className={globalStyle.pageTitle}>
-            <h1>contact</h1>
+            <h1>Contact</h1>
           </div>
           <div className={globalStyle.border}></div>
         </div>
@@ -146,7 +146,7 @@ function Contact() {
               <form
                 autoComplete="off"
                 onSubmit={e => handleSubmit(e)}
-                className="row my-1"
+                className={`row my-1 ${contactStyle.form}`}
               >
                 <div
                   className={`col-lg-6 col-md-12 col-sm-12 col-12 ${contactStyle.input_area}`}
@@ -158,7 +158,7 @@ function Contact() {
                       name="name"
                       placeholder="Name"
                       type="text"
-                      // required
+                      required
                     />
                   </div>
                 </div>
@@ -172,7 +172,7 @@ function Contact() {
                       type="email"
                       name="email"
                       placeholder="Email"
-                      // required
+                      required
                     />
                   </div>
                 </div>
@@ -184,7 +184,7 @@ function Contact() {
                       name="message"
                       placeholder="Message"
                       type="text"
-                      // required
+                      required
                     />
                   </div>
                 </div>

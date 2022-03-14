@@ -9,31 +9,13 @@ import Aos from "aos"
 import "../styles/slick.css"
 import { useLocation } from "@reach/router"
 import { productData } from "../Data/data"
+import ProductData from "../../site/product.json"
 
 function Products() {
-  const settings = {
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          dots: true,
-          dotsClass: "button__bar",
-        },
-      },
-    ],
-  }
   const location = useLocation()
   const { width } = useWindowSize()
-  const [selected, setSelected] = useState(
-    location.hash ? location.hash : "#original"
-  )
-
+  const hashId = location?.hash ? location?.hash : "#original"
+  const [selected, setSelected] = useState(hashId.slice(1, hashId.length))
   useEffect(() => {
     Aos.init({
       delay: 100,
@@ -41,9 +23,17 @@ function Products() {
     })
   }, [])
 
+  const data = ProductData ? ProductData : productData
   return (
     <>
-      <Seo title="Products" description="Black Irish" />
+      <Seo
+        title={ProductData?.seoTitle ? ProductData?.seoTitle : "Products"}
+        description={
+          ProductData?.seoDescription
+            ? ProductData?.seoDescription
+            : "Black Irish"
+        }
+      />
       <Layout>
         <div className={globalStyle.page}>
           <div
@@ -52,7 +42,7 @@ function Products() {
             data-aos-duration="750"
             className={globalStyle.pageTitle}
           >
-            <h1>Products</h1>
+            <h1>{ProductData?.title ? ProductData?.title : "Products"}</h1>
           </div>
           <div
             data-aos="fade-up"
@@ -64,10 +54,10 @@ function Products() {
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-5 col-md-12 col-sm-12 col-12">
-              {productData.map((item, i) =>
+              {data?.section.map((item, i) =>
                 selected === item.id ? (
                   <>
-                    <div className={productStyle.img_section}>
+                    <div id={item.id} className={productStyle.img_section}>
                       <div key={i} className={productStyle.bottle_img}>
                         <img
                           data-aos="zoom-in-up"
@@ -93,7 +83,7 @@ function Products() {
               >
                 <h1>THE DETAILS</h1>
                 <ul className={productStyle.menu_list}>
-                  {productData.map((item, i) => (
+                  {data?.section.map((item, i) => (
                     <li
                       key={i}
                       onClick={() => {
@@ -110,8 +100,12 @@ function Products() {
                   ))}
                 </ul>
 
-                {productData.map((item, i) =>
-                  selected === item.id ? <p key={i}>{item.desc}</p> : null
+                {data?.section.map((item, i) =>
+                  selected === item.id ? (
+                    <p id={item.id} key={i}>
+                      {item.desc}
+                    </p>
+                  ) : null
                 )}
               </div>
             </div>

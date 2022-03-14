@@ -1,7 +1,6 @@
 import React from "react"
 import * as frame from "../styles/frame7.module.css"
 import Button from "./Button"
-import useWindowSize from "../../hooks/useWindowSize"
 import { Link } from "gatsby"
 
 function Frame7({ data }) {
@@ -13,9 +12,8 @@ function Frame7({ data }) {
         <div className={frame.imgSection}>
           {data.slice(0, 3).map((item, i) => (
             <div
-              className="text-decoration-none mb-5"
+              className="text-decoration-none mb-5 mx-4"
               key={i}
-              className="mx-4"
               data-aos="zoom-out"
               data-aos-duration={`${1000 * i}`}
             >
@@ -40,7 +38,7 @@ function Frame7({ data }) {
             </div>
           ))}
         </div>
-        <div className="mt-4">
+        <div className="mt-1">
           <Button link="/recipes" classN="green" name="View all Recipes" />
         </div>
       </div>

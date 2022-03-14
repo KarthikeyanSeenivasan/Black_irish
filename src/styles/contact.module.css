@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: 900px 600px;
+  background-size: 950px 600px;
   background-position: top;
 }
 
@@ -87,7 +87,7 @@
     width: 100%;
   }
   .butterfly_img {
-    height: 75vh;
+    height: 88vh;
     background-size: 900px 600px;
   }
 }
@@ -95,7 +95,11 @@
 @media screen and (max-width: 700px) {
   .butterfly_img {
     height: 70vh;
-    background-size: 700px 560px;
+    background-size: 800px 550px;
+  }
+  .form {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -111,8 +115,15 @@
     width: 100%;
   }
   .butterfly_img {
-    height: 55vh;
-    background-size: 560px 450px;
+    height: 50vh;
+    background-size: 600px 400px;
+  }
+  .form {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .green {
+    width: 100px;
   }
 }
 
@@ -127,7 +138,7 @@
     width: 100px;
   }
   .butterfly_img {
-    height: 70vh;
-    background-size: 400px 550px;
+    height: 50vh;
+    background-size: 500px 400px;
   }
 }

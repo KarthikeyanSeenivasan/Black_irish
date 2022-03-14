@@ -1,17 +1,15 @@
 {
-  "title": "About",
   "section": [
     {
       "title": "Black Irish is made with aged Irish whiskey and a unique special blend to provide a rich and decadent taste.",
-      "description": "Made to perfection, Black Irish is crafted in Ireland under special conditions to ensure superior quality.",
-      "image": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645623357/Black_irish/about_img_ehqzlp.png",
+      "description": "Made to perfection, Black Irish is crafted in Ireland under special conditions to ensure superior quality. ",
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645623357/Black_irish/about_img_ehqzlp.png"
     },
     {
-      "title": "Perfect to enjoy year-round, the beverage lends itself to both summer and winter specialty cocktails, and pairs well with every celebration.",
+      "title": "Perfect to enjoy year-round, the beverage lends itself to both summer and winter specialty cocktails, and pairs well with every celebration. ",
       "description": "Because of its creamy texture and rich flavor, Black Irish can be used in a variety of cocktails, poured over ice cream or simply enjoyed over ice.",
-      "image": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604552/Black_irish/home_gif2_iqxq8i.gif",
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604552/Black_irish/home_gif2_iqxq8i.gif"
     }
-  ]
+  ],
+  "title": "About"
 }

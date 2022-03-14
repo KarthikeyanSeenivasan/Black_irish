@@ -16,7 +16,7 @@ const Frame5 = ({ data }) => {
             <img src={item.img} height={273.1} alt="" />
             <h3>{item.title}</h3>
             <Button
-              link={`/products${item.id}`}
+              link={`/products#${item.id}`}
               classN="green"
               name="Learn more"
             />

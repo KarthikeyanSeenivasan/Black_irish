@@ -13,7 +13,7 @@ const Recipe = ({ data }) => {
             key={i}
             className={
               i % 2 == 0
-                ? "row d-flex justify-content-center align-items-center"
+                ? "row d-flex justify-content-center align-items-center my-3"
                 : "row d-flex flex-row-reverse justify-content-center align-items-center"
             }
           >
@@ -22,22 +22,25 @@ const Recipe = ({ data }) => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h4>{item.title}</h4>
+              <h4 className={recipeStyle.recipeTitle}>{item.title}</h4>
               <h6>{item.subtitleOne}: </h6>
               <ul>
-                {item?.pointsOne.map((li, i) => (
+                {item?.pointOne.map((li, i) => (
                   <li>{li?.point}</li>
                 ))}
               </ul>
               <h6>{item.subtitleTwo}: </h6>
               <ul>
-                {item?.pointsTwo.map((li, i) => (
+                {item?.pointTwo.map((li, i) => (
                   <li key={i}>{li?.point}</li>
                 ))}
               </ul>
             </div>
-            <div className=" col-lg-6 col-md-12  col-sm-12 col-12">
+            <div
+              className={`col-lg-6 col-md-12  col-sm-12 col-12 ${recipeStyle.imageBox}`}
+            >
               <img
+                className={recipeStyle.recipeImage}
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 src={item.img}

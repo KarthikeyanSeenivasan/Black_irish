@@ -1,11 +1,10 @@
 {
-  "banner_img": "/images/uploads/black_irish.svg",
+  "title": "Home",
   "banner_video": "https://res.cloudinary.com/jaffa/video/upload/v1644611348/homepage_video_llnlqn.mp4",
+  "banner_img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1646742432/Black_irish/black_irish_hp05ij.svg",
   "section": [
     {
-      "title": "Discover a new world of flavor, inspired by the heritage and spirit of Mariah Carey.",
-      "description": "When thinking of Irish cream, many may think of curling up with those they love by the fire, or enjoying it as an after-dinner drink on a cold winter night.",
-      "image": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604531/Black_irish/hom1_vzdunb.png",
+      "title": "Discover a new world of flavor, inspired by the heritage and spirit of Mariah Carey. ",
       "desc": "When thinking of Irish cream, many may think of curling up with those they love by the fire, or enjoying it as an after-dinner drink on a cold winter night.",
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604531/Black_irish/hom1_vzdunb.png",
       "btnName": "About Us",
@@ -13,12 +12,17 @@
     },
     {
       "title": "A classic holiday beverage",
-      "description": "Irish cream has always captured those festive feelings of warmth, laughter and love",
-      "image": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604552/Black_irish/home_gif2_iqxq8i.gif",
       "desc": "Irish cream has always captured those festive feelings of warmth, laughter and love",
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604552/Black_irish/home_gif2_iqxq8i.gif",
       "btnName": "Our Irish Cream",
       "link": "products"
+    }
+  ],
+  "poster": [
+    {
+      "title": "Black Irish",
+      "content": "When thinking of Irish cream, many may think of curling up with those they love by the fire, or enjoying it as an after-dinner drink on a cold winter night. A classic holiday beverage, Irish cream has always captured those festive feelings of warmth, laughter and love.",
+      "btnName": "Our Story"
     }
   ]
 }

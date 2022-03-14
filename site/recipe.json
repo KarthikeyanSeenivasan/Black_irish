@@ -1,0 +1,203 @@
+{
+  "title": "COCKTAIL RECIPES",
+  "section": [
+    {
+      "id": "russianchocolate",
+      "title": "White Chocolate Russian",
+      "nickTitle": "White Chocolate Russian",
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604631/Black_irish/recipes/recipe1_s3y39z.png",
+      "subtitleOne": "Ingredients",
+      "pointOne": [
+        {
+          "point": "2 oz. Vodka"
+        },
+        {
+          "point": "1 oz. coffee liqueur"
+        },
+        {
+          "point": "1 oz. Black Irish White Chocolate"
+        },
+        {
+          "point": "½ oz. cream"
+        },
+        {
+          "point": "Chocolate syrup to drizzle"
+        }
+      ],
+      "subtitleTwo": "Directions",
+      "pointTwo": [
+        {
+          "point": "Add vodka and coffee liqueur to glass filled with ice"
+        },
+        {
+          "point": "Slowly pour Black Irish White Chocolate and cream over ice"
+        },
+        {
+          "point": "Garnish with drizzle of chocolate syrup and serve"
+        }
+      ]
+    },
+    {
+      "id": "irishcoffee",
+      "nickTitle": "We Belong Together Brew",
+      "title": "We Belong Together Brew | Irish Coffee",
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604629/Black_irish/recipes/recipe2_betqav.png",
+      "subtitleOne": "Ingredients",
+      "pointOne": [
+        {
+          "point": "6 oz. prepared hot coffee"
+        },
+        {
+          "point": "1 oz. Irish whiskey"
+        },
+        {
+          "point": "1⁄2 oz. coffee liqueur"
+        },
+        {
+          "point": "1 1⁄2 oz. Black Irish Original"
+        },
+        {
+          "point": "Whipped cream to top"
+        },
+        {
+          "point": "Optional: cocoa powder for dusting"
+        }
+      ],
+      "subtitleTwo": "Directions",
+      "pointTwo": [
+        {
+          "point": "Fill glass mug or footed glass mug with hot water and let stand 1-2 minutes to "
+        },
+        {
+          "point": "heat up glass; pour out. "
+        },
+        {
+          "point": "Fill glass with coffee, Irish Whiskey and Black Irish Original, and stir "
+        },
+        {
+          "point": "Dust cocoa powder over whipped cream, and serve"
+        }
+      ]
+    },
+    {
+      "id": "caramelhotchocolate",
+      "nickTitle": "Salted Caramel Hot Chocolate",
+      "title": "Salted Caramel Hot Chocolate",
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604635/Black_irish/recipes/recipe3_ytikk9.png",
+      "subtitleOne": "Ingredients",
+      "pointOne": [
+        {
+          "point": "1 cup prepared hot chocolate"
+        },
+        {
+          "point": "2 oz. Black Irish Salted Caramel"
+        },
+        {
+          "point": "Whipped cream to top"
+        },
+        {
+          "point": "Caramel syrup to drizzle"
+        }
+      ],
+      "subtitleTwo": "Directions",
+      "pointTwo": [
+        {
+          "point": "Fill mug with hot chocolate and Black Irish Salted Caramel, and stir"
+        },
+        {
+          "point": "Top with whipped cream"
+        }
+      ]
+    },
+    {
+      "id": "espressomartini",
+      "title": "All Irish Christmas For You | Espresso Martini",
+      "nickTitle": "Espresso Martini",
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604635/Black_irish/recipes/recipe4_rwrxmy.png",
+      "subtitleOne": "Ingredients",
+      "pointOne": [
+        {
+          "point": "2 oz. cooled espresso or cold brew concentrate"
+        },
+        {
+          "point": "1 oz. vodka"
+        },
+        {
+          "point": "1⁄2 oz. coffee liqueur"
+        },
+        {
+          "point": "1⁄2 oz. Black Irish Original"
+        },
+        {
+          "point": "Pinch of cinnamon"
+        }
+      ],
+      "subtitleTwo": "Directions",
+      "pointTwo": [
+        {
+          "point": "Add espresso, vodka, coffee liqueur and Black Irish Original to shaker with ice,"
+        },
+        {
+          "point": "and shake vigorously"
+        },
+        {
+          "point": "Strain into coupe glass or martini glass of choice"
+        },
+        {
+          "point": "Top with pinch of cinnamon"
+        }
+      ]
+    },
+    {
+      "id": "spikedmilkshake",
+      "nickTitle": "Spiked Milkshake",
+      "title": "The Fantasy | Spiked Milkshake",
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1645604636/Black_irish/recipes/recipe5_dsv5vr.png",
+      "subtitleOne": "Ingredients",
+      "pointOne": [
+        {
+          "point": "1 cup vanilla ice cream"
+        },
+        {
+          "point": "3⁄4 to 1 cup milk, depending on desired consistency"
+        },
+        {
+          "point": "3 oz. of favorite Black Irish flavor"
+        },
+        {
+          "point": "\"Whipped cream to top"
+        },
+        {
+          "point": "Optional garnishes: sprinkles, chocolate shavings, mini chocolate chips,"
+        },
+        {
+          "point": "crumbled cookies, chopped nuts"
+        }
+      ],
+      "subtitleTwo": "Directions",
+      "pointTwo": [
+        {
+          "point": "Blend together ice cream, 3⁄4 cup milk and Black Irish until smooth; add additional"
+        },
+        {
+          "point": "milk as needed to reach desired consistency"
+        },
+        {
+          "point": "Rim glass with chocolate syrup and dip into favorite garnish, such as sprinkles"
+        },
+        {
+          "point": "Drizzle chocolate syrup onto inner sides of glass"
+        },
+        {
+          "point": "Carefully pour milkshake into glass"
+        },
+        {
+          "point": "Top with whipped cream and additional favorite garnishes"
+        },
+        {
+          "point": "Serve with straw"
+        }
+      ]
+    }
+  ]
+}
